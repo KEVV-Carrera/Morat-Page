@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <header class="container-fluid mt-5">
+        <div class="row d-flex justify-content-center" style="background-color: #9a784f;">
+            <img src="img/logo.png" class="img-fluid img-logo" alt="..."">
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item mx-4">
+                <a class="nav-link active nav-text" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item mx-4">
+                <a class="nav-link nav-text" href="album.html">Canciones</a>
+              </li>
+              <li class="nav-item mx-4">
+                <a class="nav-link nav-text" href="register.html">Registrarse</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <main class="container-fluid">
+        <table class="table mt-5">
+            <thead>
+              <tr class="text-center">
+                <th scope="col">Nombre</th>
+                <th scope="col">Video</th>
+                <th scope="col">Album</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="text-center text-band">
+                <td style="width: 550px;" class="align-middle">Acuerdate de mi</td>
+                <td>
+                    <img src="img/album2.jpg" class="d-block w-100 img-tabla" alt="...">
+                    <audio src="Audio/AcuerdateDMI.mp3" type="audio/mp3" controls></audio>
+                </td>
+                <td style="width: 550px;" class="align-middle">Balas Perdidas</td>
+              </tr>
+              <tr class="text-center text-band">
+                <td class="align-middle">Aprender a Quererte</td>
+                <td style="width: 550px;">
+                    <img src="img/album1.jpg" class="d-block w-100 img-tabla" alt="...">
+                    <audio src="Audio/AprenderQuererte.mp3" type="audio/mp3" controls>
+                </td>
+                <td class="align-middle">Sobre el amor y sus efectos secundarios</td>
+              </tr>
+              <tr class="text-center text-band">
+                <td class="align-middle">Date la vuelta</td>
+                <td>
+                    <img src="img/album3.jpg" class="d-block w-100 img-tabla" alt="...">
+                    <audio src="Audio/DateLaVuelta.mp3" type="audio/mp3" controls>
+                </td>
+                <td class="align-middle">¿A dónde vamos?</td>
+              </tr>
+              <tr class="text-center text-band">
+                <td class="align-middle">De Cero</td>
+                <td>
+                    <img src="img/album3.jpg" class="d-block w-100 img-tabla" alt="...">
+                    <audio src="Audio/DeCero.mp3" type="audio/mp3" controls></audio>
+                </td>
+                <td class="align-middle"> ¿A dónde vamos?</td>
+              </tr>
+              <tr class="text-center text-band">
+                <td class="align-middle">Maldita Costumbre</td>
+                <td>
+                    <img src="img/album2.jpg" class="d-block w-100 img-tabla" alt="...">
+                    <audio src="Audio/MalditaCostumbre.mp3" type="audio/mp3" controls></audio>
+                </td>
+                <td class="align-middle">Balas Perdidas</td>
+              </tr>
+              <tr class="text-center text-band">
+                <td class="align-middle"> Mil Tormentas</td>
+                <td>
+                    <img src="img/album1.jpg" class="d-block w-100 img-tabla" alt="...">
+                    <audio src="Audio/MilTormentas.mp3" type="audio/mp3" controls></audio>
+                </td>
+                <td class="align-middle">Sobre el amor y sus efectos secundarios</td>
+              </tr>
+              <tr class="text-center text-band">
+                <td class="align-middle">No hay más que hablar</td>
+                <td>
+                    <img src="img/album3.jpg" class="d-block w-100 img-tabla" alt="...">
+                    <audio src="Audio/NHMQH.mp3" type="audio/mp3" controls></audio>
+                </td>
+                <td class="align-middle"> ¿A dónde vamos?</td>
+              </tr>
+            </tbody>
+          </table>
+          
+      </main>
+
+      <footer class="text-center text-lg-start mt-5" style="background-color: #9a784f;">
+        <div class="container d-flex justify-content-center py-5">
+
+          <a target="_blank" class="btn btn-primary btn-floating m-1"style="background-color: #3b5998;" href="https://www.facebook.com/moratoficial" role="button"><i class="fab fa-facebook-f"></i></a>
+          <a target="_blank" class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" href="https://twitter.com/MoratBanda?" role="button"><i class="fab fa-twitter"></i></a>
+          <a target="_blank" class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39;" href="https://www.instagram.com/morat/?hl=es-la" role="button"><i class="fab fa-instagram"></i></a>
+          <a target="_blank" class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39;" href="https://www.youtube.com/channel/UCvQwfdlOR55OO82gFWJCnWQ" role="button"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2020 Copyright: KEVIN CARRERA
+        </div>
+      </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>

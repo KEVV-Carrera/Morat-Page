@@ -1,0 +1,58 @@
+
+.img-logo{
+    width: 230px;
+}
+.text-band{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.card-body{
+    height: 220px;
+}
+.centrar{
+    padding-top: 30px;
+    margin: 0px auto;
+    display: block;
+}
+.img-caro{
+    height: 90%;
+}
+.about-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.register-section{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-radius: 5px;
+}
+.text_register{
+    font-size: 27px;
+    color: white;
+    padding: 15px 0;
+    background-color: #256b7d;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+}
+.reg-div{
+    width: 40%;
+    height: 50%;
+    background: #fff;
+}
+@media (max-width: 1200px) {
+    .reg-div {
+    width: 60%;
+    height: 50%;
+    background: #fff;
+    }
+}
+.card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
+.img-tabla{
+    height: 300px;
+}
