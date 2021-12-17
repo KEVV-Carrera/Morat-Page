@@ -15,37 +15,50 @@
 </head>
 <body>
  
-    <header class="container-fluid mt-5">
+    <header class="container-fluid">
       <div class="row d-flex justify-content-center" style="background-color: #9a784f;">
         <img src="img/logo.png" class="img-fluid img-logo" alt="..."">
       </div>
   </header>
     
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
-          <li class="nav-item mx-4">
-            <a class="nav-link active nav-text" aria-current="page" href="index.html">Inicio</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
           </li>
-          <li class="nav-item mx-4">
-            <a class="nav-link nav-text" href="album.html">Canciones</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Álbumes
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="primer_album.html">M1</a></li>
+              <li><a class="dropdown-item" href="#">M2</a></li>
+              <li><a class="dropdown-item" href="#">M3</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Versiones Acústicas</a></li>
+              <li><a class="dropdown-item" href="#">Single</a></li>
+            </ul>
           </li>
-          <li class="nav-item mx-4">
-            <a class="nav-link nav-text" href="register.html">Registrarse</a>
+          <li class="nav-item">
+            <a class="nav-link" href="register.html">Registrarse</a>
           </li>
         </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
     </div>
   </nav>
-
       <section class="about-section mt-2" id="">
         <div class="row reg-div mx-auto py-4" id="div-form">
           <form>
-            <h2 class="title-form text_register text-center">Registarse</h2>
+            <h2 class="title-form text_register text-center">Registrarse</h2>
             <div class="mb-3 mt-4">
               <label for="inputName" class="form-label">Nombres y Apellidos:</label>
               <input type="text" class="form-control" id="inputName" aria-describedby="emailHelp">
@@ -54,10 +67,6 @@
               <label for="exampleInputEmail1" class="form-label">Email address:</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
               <div id="emailHelp" class="form-text">Aquí ingrese su correo</div>
-            </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Recordámelo</label>
             </div>
             <div class="btn-form"><button type="submit" class="btn btn-dark mt-3">Registrar</button></div>
           </form>
@@ -74,7 +83,7 @@
         </div>
 
         <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2020 Copyright: KEVIN CARRERA
+          © 2022 Copyright - Kevin Carera
         </div>
       </footer>
 
