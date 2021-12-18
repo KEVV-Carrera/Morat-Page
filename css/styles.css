@@ -70,3 +70,58 @@
     color: white;
     padding: 10px 0;
 }
+
+/* Pop- up */
+
+.pop_up_container {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    inset: 0;
+    display: grid;
+    place-items: center;
+    animation: show_popup 500ms ease-in-out forwards;
+}
+
+.pop_up {
+    width: clamp(300px, 90vw, 500px);
+    background-color: #0e0e0e;
+    padding: 2rem;
+    border-radius: 1rem;
+    position: relative;
+    color: #fff;
+}
+
+/* this is the X */
+.pop_up h1 {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    cursor: pointer;
+    user-select: none;
+}
+
+.pop_up h1:active,
+button:active {
+    transform: scale(.9);
+}
+
+/* we're selecting the checkbox */
+/* ~ selects all the the siblings */
+/* we'll also have to remove the animation when the checkbox gets checked */
+/* and remove the input element from the screen */
+#popup:checked ~ .pop_up_container {
+    transform: scale(0);
+    pointer-events: none;
+    animation: none;
+}
+/* so basically what we're saying is when the checkbox gets checked select the sibling with the class of .pop_up_container and apply those properties */
+/* now I'll add some animations to make it look more attractive */
+
+@keyframes show_popup {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+
+#popup {
+    display: none;
+}
